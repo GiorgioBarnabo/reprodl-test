@@ -111,3 +111,7 @@ def train():
 
     trainer = pl.Trainer(gpus=1, max_epochs=25)
     trainer.fit(audionet, train_loader, val_loader)
+
+
+if __name__ == "__main__":
+    train()
