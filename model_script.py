@@ -6,18 +6,6 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 
-torch.cuda.is_available()
-
-# Substitute this with your actual path. This is the root folder of ESC-50, where
-# you can find the subfolders 'audio' and 'meta'.
-datapath = Path('data/ESC-50')
-
-# Using Path is fundamental to have reproducible code across different operating systems.
-csv = pd.read_csv(datapath / Path('meta/esc50.csv'))
-
-# We can use torchaudio.load to load the file. The second value is the sampling rate of the file.
-x, sr = torchaudio.load(datapath / 'audio' / csv.iloc[0, 0], normalize=True)
-
 class ESC50Dataset(torch.utils.data.Dataset):
     # Simple class to load the desired folders inside ESC-50
     
@@ -52,20 +40,6 @@ class ESC50Dataset(torch.utils.data.Dataset):
     def __len__(self):
         # Returns length
         return len(self.csv)
-
-train_data = ESC50Dataset()
-
-
-
-# We use folds 1,2,3 for training, 4 for validation, 5 for testing.
-train_data = ESC50Dataset(folds=[1,2,3])
-val_data = ESC50Dataset(folds=[4])
-test_data = ESC50Dataset(folds=[5])
-
-train_loader = \
-    torch.utils.data.DataLoader(train_data, batch_size=8, shuffle=True)
- val_loader = torch.utils.data.DataLoader(val_data, batch_size=8)
-test_loader = torch.utils.data.DataLoader(test_data, batch_size=8)
 
 
 class AudioNet(pl.LightningModule):
@@ -119,10 +93,21 @@ class AudioNet(pl.LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=1e-3)
         return optimizer
 
-pl.seed_everything(0)
 
-audionet = AudioNet()
+def train():
+    # We use folds 1,2,3 for training, 4 for validation, 5 for testing.
+    train_data = ESC50Dataset(folds=[1,2,3])
+    val_data = ESC50Dataset(folds=[4])
+    test_data = ESC50Dataset(folds=[5])
 
-trainer = pl.Trainer(gpus=1, max_epochs=25)
-trainer.fit(audionet, train_loader, val_loader)
-trainer.test(audionet, test_loader)
+    train_loader = \
+        torch.utils.data.DataLoader(train_data, batch_size=8, shuffle=True)
+    val_loader = torch.utils.data.DataLoader(val_data, batch_size=8)
+    test_loader = torch.utils.data.DataLoader(test_data, batch_size=8)
+
+    pl.seed_everything(0)
+
+    audionet = AudioNet()
+
+    trainer = pl.Trainer(gpus=1, max_epochs=25)
+    trainer.fit(audionet, train_loader, val_loader)
