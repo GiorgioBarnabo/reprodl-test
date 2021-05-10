@@ -2,6 +2,7 @@ import torch, torchaudio
 from torch import nn
 from torch.nn import functional as F
 import pytorch_lightning as pl
+from pytorch_lightning.metrics import functional
 from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -48,9 +49,10 @@ class ESC50Dataset(torch.utils.data.Dataset):
 
 class AudioNet(pl.LightningModule):
     
-    def __init__(self, hparams):
+    def __init__(self, hparams: DictConfig):
         super().__init__()
-        self.hparams = hparams
+        print(hparams)
+        self.save_hyperparameters(hparams)
         self.conv1 = nn.Conv2d(1, hparams.base_filters, 11, padding=5)
         self.bn1 = nn.BatchNorm2d(hparams.base_filters)
         self.conv2 = nn.Conv2d(hparams.base_filters, hparams.base_filters, 3, padding=1)
@@ -90,12 +92,12 @@ class AudioNet(pl.LightningModule):
         x, y = batch
         y_hat = self(x)
         y_hat = torch.argmax(y_hat, dim=1)
-        acc = pl.metrics.functional.accuracy(y_hat, y)
+        acc = functional.accuracy(y_hat, y)
         self.log('val_acc', acc, on_epoch=True, prog_bar=True)
         return acc
         
     def configure_optimizers(self):
-        optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.optim.lr)
+        optimizer = torch.optim.Adam(self.parameters(), lr=self.hparams.optimizer.lr)
         return optimizer
 
 
@@ -106,17 +108,17 @@ def train(cfg: DictConfig):
     train_data = ESC50Dataset(path=path, folds=cfg.data.train_folds)
     val_data = ESC50Dataset(path=path, folds=cfg.data.val_folds)
     test_data = ESC50Dataset(path=path, folds=cfg.data.test_folds)
-
+    
     train_loader = \
-        torch.utils.data.DataLoader(train_data, batch_size=8, shuffle=True)
-    val_loader = torch.utils.data.DataLoader(val_data, batch_size=8)
-    test_loader = torch.utils.data.DataLoader(test_data, batch_size=8)
+        torch.utils.data.DataLoader(train_data, cfg.data.batch_size, shuffle=True)
+    val_loader = torch.utils.data.DataLoader(val_data, cfg.data.batch_size)
+    test_loader = torch.utils.data.DataLoader(test_data, cfg.data.batch_size)
 
     pl.seed_everything(cfg.seed)
 
-    audionet = AudioNet(**cfg.model)
+    audionet = AudioNet(cfg.model)
 
-    trainer = pl.Trainer(sfg.trainer)
+    trainer = pl.Trainer(**cfg.trainer)
     trainer.fit(audionet, train_loader, val_loader)
 
 

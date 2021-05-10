@@ -10,11 +10,11 @@ data:
 
 model:
   base_filters: 32
-  num_classes: 50
-  optim:
+  n_classes: 50
+  optimizer:
     lr: 3e-4
 
 trainer:
-  seed: 0
   gpus: 1
   max_epochs: 10
+
