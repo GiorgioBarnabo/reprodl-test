@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 import wandb
 
 # Set up your default hyperparameters
-hparams_default = dict(base_filters=16, lr=10 ^ -4, sample_rate=4000)
+hparams_default = dict(base_filters=16, lr=0.0001, sample_rate=4000)
 
 
 class ESC50Dataset(torch.utils.data.Dataset):
@@ -108,7 +108,7 @@ class AudioNet(pl.LightningModule):
         return optimizer
 
 
-@hydra.main(config_path="configs", config_name="default", strict=False)
+@hydra.main(config_path="configs", config_name="default")
 def train(cfg: DictConfig):
 
     logger.info(OmegaConf.to_yaml(cfg))
@@ -118,7 +118,7 @@ def train(cfg: DictConfig):
     wandb_config_omega = OmegaConf.create(wandb.config._as_dict())
     cfg.data.sample_rate = wandb_config_omega.sample_rate
     cfg.model.base_filters = wandb_config_omega.base_filters
-    cfg.model.optim.lr = wandb_config_omega.lr
+    cfg.model.optimizer.lr = wandb_config_omega.lr
 
     # We use folds 1,2,3 for training, 4 for validation, 5 for testing.
     path = Path(get_original_cwd()) / Path(cfg.data.path)
