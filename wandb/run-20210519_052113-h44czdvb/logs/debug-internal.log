@@ -1,0 +1,572 @@
+2021-05-19 05:21:14,944 INFO    MainThread:72802 [internal.py:wandb_internal():88] W&B internal server running at pid: 72802, started at: 2021-05-19 05:21:14.943973
+2021-05-19 05:21:14,957 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: check_version
+2021-05-19 05:21:14,961 INFO    WriterThread:72802 [datastore.py:open_for_write():77] open: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/run-h44czdvb.wandb
+2021-05-19 05:21:14,963 DEBUG   SenderThread:72802 [sender.py:send():176] send: header
+2021-05-19 05:21:14,963 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: check_version
+2021-05-19 05:21:15,042 DEBUG   SenderThread:72802 [sender.py:send():176] send: run
+2021-05-19 05:21:15,264 INFO    SenderThread:72802 [dir_watcher.py:__init__():168] watching files in: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files
+2021-05-19 05:21:15,264 INFO    SenderThread:72802 [sender.py:_start_run_threads():696] run started: h44czdvb with start time 1621401673
+2021-05-19 05:21:15,264 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:21:15,265 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: run_start
+2021-05-19 05:21:15,265 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:21:16,270 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:21:17,100 DEBUG   HandlerThread:72802 [meta.py:__init__():39] meta init
+2021-05-19 05:21:17,100 DEBUG   HandlerThread:72802 [meta.py:__init__():53] meta init done
+2021-05-19 05:21:17,100 DEBUG   HandlerThread:72802 [meta.py:probe():210] probe
+2021-05-19 05:21:17,108 DEBUG   HandlerThread:72802 [meta.py:_setup_git():200] setup git
+2021-05-19 05:21:17,145 DEBUG   HandlerThread:72802 [meta.py:_setup_git():207] setup git done
+2021-05-19 05:21:17,145 DEBUG   HandlerThread:72802 [meta.py:_save_pip():57] save pip
+2021-05-19 05:21:17,146 DEBUG   HandlerThread:72802 [meta.py:_save_pip():71] save pip done
+2021-05-19 05:21:17,146 DEBUG   HandlerThread:72802 [meta.py:_save_conda():78] save conda
+2021-05-19 05:21:17,271 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/conda-environment.yaml
+2021-05-19 05:21:17,272 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/requirements.txt
+2021-05-19 05:21:20,268 DEBUG   HandlerThread:72802 [meta.py:_save_conda():86] save conda done
+2021-05-19 05:21:20,268 DEBUG   HandlerThread:72802 [meta.py:probe():252] probe done
+2021-05-19 05:21:20,272 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:21:20,272 DEBUG   SenderThread:72802 [sender.py:send():176] send: files
+2021-05-19 05:21:20,273 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-metadata.json with policy now
+2021-05-19 05:21:20,274 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:21:20,277 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/output.log
+2021-05-19 05:21:20,278 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-metadata.json
+2021-05-19 05:21:20,842 INFO    Thread-11 :72802 [upload_job.py:push():133] Uploaded file /tmp/tmpdftw3_55wandb/180p8e8k-wandb-metadata.json
+2021-05-19 05:21:24,903 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:24,903 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:24,904 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:21:24,905 DEBUG   SenderThread:72802 [sender.py:send():176] send: config
+2021-05-19 05:21:25,277 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:21:25,277 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test
+2021-05-19 05:21:25,277 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb
+2021-05-19 05:21:26,277 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:21:35,454 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:21:35,455 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:21:36,756 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:36,756 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:36,758 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:21:36,758 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:36,758 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:36,758 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:21:36,758 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:21:36,759 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:21:37,282 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:21:38,283 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:21:46,168 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:21:49,392 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:49,392 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:21:49,392 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:21:49,392 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:21:49,393 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:21:49,393 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:21:50,289 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:21:50,640 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:21:50,641 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:21:51,290 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:22:03,709 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:03,709 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:03,710 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:22:03,710 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:22:03,710 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:22:03,710 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:22:04,296 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:22:05,297 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:22:05,822 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:22:05,822 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:22:15,615 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:15,617 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:15,617 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:22:15,617 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:15,618 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:22:15,618 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:22:15,618 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:22:16,302 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:22:16,302 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=0-step=149.ckpt
+2021-05-19 05:22:16,302 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:22:17,146 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:22:17,302 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:22:21,004 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:22:21,004 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:22:32,804 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:32,804 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:32,806 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:22:32,806 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:22:32,806 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:22:32,807 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:22:33,310 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:22:34,311 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:22:36,299 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:22:36,299 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:22:48,110 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:22:51,487 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:22:51,488 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:22:51,668 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:51,669 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:22:51,669 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:22:51,669 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:22:51,669 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:22:51,670 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:22:52,324 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:22:53,324 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:06,670 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:23:06,670 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:23:07,206 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:07,206 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:07,208 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:07,208 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:07,208 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:07,208 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:07,332 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:09,334 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:17,001 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:17,002 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:17,002 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:17,004 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:17,004 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:17,005 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:17,338 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:17,338 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=1-step=299.ckpt
+2021-05-19 05:23:17,339 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:23:18,338 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:19,166 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:23:21,853 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:23:21,853 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:23:27,771 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:27,771 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:27,772 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:27,772 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:27,772 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:27,772 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:28,344 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:29,344 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:37,036 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:23:37,036 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:23:38,270 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:38,272 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:38,272 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:38,272 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:38,272 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:38,273 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:38,349 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:40,350 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:47,981 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:47,981 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:47,981 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:47,982 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:47,982 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:47,982 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:48,354 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:49,355 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:23:50,095 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:23:52,213 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:23:52,214 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:23:57,463 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:57,463 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:23:57,464 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:23:57,465 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:23:57,465 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:23:57,466 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:23:58,359 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:23:58,359 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=2-step=449.ckpt
+2021-05-19 05:23:58,360 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:23:59,360 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:24:07,393 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:24:07,394 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:24:08,549 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:08,764 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:08,764 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:24:08,764 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:24:08,764 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:24:08,764 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:24:09,365 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:24:09,365 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:24:21,052 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:24:22,573 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:24:22,573 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:24:27,899 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:27,899 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:27,899 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:24:27,899 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:24:27,900 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:24:27,900 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:24:28,375 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:24:29,375 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:24:37,757 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:24:37,757 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:24:46,587 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:46,588 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:46,589 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:24:46,589 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:24:46,589 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:24:46,590 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:24:47,386 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:24:47,386 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:24:52,008 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:24:52,958 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:24:52,959 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:24:58,671 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:58,671 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:24:58,671 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:24:58,673 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:24:58,673 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:24:58,673 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:24:59,394 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:24:59,394 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:24:59,395 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=3-step=599.ckpt
+2021-05-19 05:24:59,395 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:25:08,148 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:25:08,149 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:25:10,576 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:10,578 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:10,578 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:25:10,578 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:25:10,578 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:25:10,578 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:25:11,401 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:25:11,401 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:25:23,008 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:25:23,130 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:23,131 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:23,131 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:25:23,131 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:25:23,131 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:25:23,132 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:25:23,348 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:25:23,348 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:25:23,408 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:25:25,409 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:25:36,669 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:36,670 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:36,670 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:25:36,672 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:25:36,672 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:25:36,673 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:25:37,416 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:25:37,416 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:25:38,535 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:25:38,535 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:25:48,744 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:48,744 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:25:48,745 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:25:48,746 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:25:48,746 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:25:48,747 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:25:49,424 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:25:49,425 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:25:49,425 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=4-step=749.ckpt
+2021-05-19 05:25:49,425 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:25:53,720 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:25:53,720 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:25:53,945 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:26:04,745 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:04,746 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:04,746 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:26:04,748 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:26:04,748 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:26:04,748 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:26:05,434 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:26:05,434 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:26:08,916 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:26:08,916 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:26:19,006 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:19,007 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:19,009 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:26:19,009 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:26:19,009 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:26:19,010 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:26:19,443 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:26:20,444 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:26:24,106 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:26:24,106 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:26:24,896 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:26:28,948 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:28,949 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:28,949 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:26:28,950 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:26:28,950 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:26:28,950 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:26:29,448 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:26:29,449 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:26:38,355 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:38,355 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:38,357 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:26:38,357 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:26:38,357 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:26:38,357 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:26:38,453 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:26:38,453 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=5-step=899.ckpt
+2021-05-19 05:26:38,453 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:26:39,283 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:26:39,284 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:26:39,453 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:26:50,579 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:50,579 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:26:50,579 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:26:50,579 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:26:50,579 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:26:50,580 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:26:51,460 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:26:51,460 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:26:54,461 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:26:54,461 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:26:55,870 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:27:03,123 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:03,123 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:03,123 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:27:03,125 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:27:03,125 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:27:03,126 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:27:03,472 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:27:04,473 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:27:09,648 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:27:09,648 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:27:15,637 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:15,639 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:15,639 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:27:15,639 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:27:15,639 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:27:15,640 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:27:16,479 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:27:17,480 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:27:24,828 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:27:24,828 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:27:26,782 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:27:28,691 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:28,691 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:28,693 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:27:28,693 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:27:28,693 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:27:28,693 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:27:29,486 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:27:29,487 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:27:29,487 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=6-step=1049.ckpt
+2021-05-19 05:27:29,487 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:27:40,015 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:27:40,016 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:27:47,734 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:47,734 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:27:47,736 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:27:47,736 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:27:47,736 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:27:47,736 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:27:48,498 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:27:49,498 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:27:55,199 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:27:55,199 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:27:57,796 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:28:06,586 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:06,586 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:06,588 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:06,588 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:06,588 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:06,589 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:28:07,508 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:28:07,509 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:28:10,385 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:28:10,385 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:28:18,312 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:18,313 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:18,313 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:18,315 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:18,315 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:18,316 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:28:18,515 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:28:19,516 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:28:25,571 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:28:25,571 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:28:28,641 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:28,641 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:28,642 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:28,643 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:28,643 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:28,643 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:28:28,814 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:28:29,521 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:28:29,522 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:28:29,522 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=7-step=1199.ckpt
+2021-05-19 05:28:29,522 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:28:38,824 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:38,824 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:38,825 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:38,825 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:38,825 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:38,825 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:28:39,526 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:28:39,526 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:28:40,751 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:28:40,751 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:28:50,816 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:50,816 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:50,817 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:50,817 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:50,817 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:50,817 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:28:51,532 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:28:51,532 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:28:55,929 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:28:55,930 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:28:59,764 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:28:59,865 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:59,865 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:28:59,865 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:28:59,867 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:28:59,868 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:28:59,868 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:00,537 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:01,537 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:09,699 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:09,699 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:09,701 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:29:09,701 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:29:09,701 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:09,701 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:10,542 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:10,543 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=8-step=1349.ckpt
+2021-05-19 05:29:10,543 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:29:11,113 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:29:11,114 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:29:11,543 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:22,688 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:22,688 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:22,688 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:29:22,688 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:29:22,688 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:22,689 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:23,549 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:24,549 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:26,305 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:29:26,306 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:29:30,684 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:29:34,530 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:34,530 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:34,531 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:29:34,531 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:29:34,532 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:34,532 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:34,554 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:36,555 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:41,488 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 05:29:41,488 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 05:29:44,588 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:44,589 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:44,590 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:29:44,590 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:29:44,590 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:44,591 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:45,560 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:46,560 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:55,481 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:55,481 DEBUG   SenderThread:72802 [sender.py:send():176] send: metric
+2021-05-19 05:29:55,481 WARNING SenderThread:72802 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 05:29:55,481 DEBUG   SenderThread:72802 [sender.py:send():176] send: history
+2021-05-19 05:29:55,481 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:55,482 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:55,565 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:55,565 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 05:29:55,566 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints
+2021-05-19 05:29:57,497 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:57,497 DEBUG   SenderThread:72802 [sender.py:send():176] send: telemetry
+2021-05-19 05:29:57,498 DEBUG   SenderThread:72802 [sender.py:send():176] send: exit
+2021-05-19 05:29:57,498 INFO    SenderThread:72802 [sender.py:send_exit():281] handling exit code: 0
+2021-05-19 05:29:57,498 INFO    SenderThread:72802 [sender.py:send_exit():289] send defer
+2021-05-19 05:29:57,498 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:57,499 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,499 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 0
+2021-05-19 05:29:57,499 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,499 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 0
+2021-05-19 05:29:57,500 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 1
+2021-05-19 05:29:57,500 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,500 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 1
+2021-05-19 05:29:57,566 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/output.log
+2021-05-19 05:29:57,567 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:57,613 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,613 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 1
+2021-05-19 05:29:57,613 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:57,613 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 2
+2021-05-19 05:29:57,613 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:57,614 DEBUG   SenderThread:72802 [sender.py:send():176] send: stats
+2021-05-19 05:29:57,615 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,615 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 2
+2021-05-19 05:29:57,615 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,615 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 2
+2021-05-19 05:29:57,615 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 3
+2021-05-19 05:29:57,615 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,616 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 3
+2021-05-19 05:29:57,616 DEBUG   SenderThread:72802 [sender.py:send():176] send: summary
+2021-05-19 05:29:57,616 INFO    SenderThread:72802 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 05:29:57,616 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,617 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 3
+2021-05-19 05:29:57,617 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 4
+2021-05-19 05:29:57,617 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,617 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 4
+2021-05-19 05:29:57,617 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,617 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 4
+2021-05-19 05:29:57,715 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:57,831 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 5
+2021-05-19 05:29:57,831 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:57,832 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:57,832 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 5
+2021-05-19 05:29:57,832 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:57,832 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 5
+2021-05-19 05:29:57,832 INFO    SenderThread:72802 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-05-19 05:29:57,932 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:58,567 INFO    Thread-8  :72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:58,568 INFO    SenderThread:72802 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:58,568 INFO    SenderThread:72802 [dir_watcher.py:finish():312] scan: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files
+2021-05-19 05:29:58,568 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/requirements.txt requirements.txt
+2021-05-19 05:29:58,568 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml config.yaml
+2021-05-19 05:29:58,569 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-metadata.json wandb-metadata.json
+2021-05-19 05:29:58,569 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/conda-environment.yaml conda-environment.yaml
+2021-05-19 05:29:58,575 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/output.log output.log
+2021-05-19 05:29:58,579 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json wandb-summary.json
+2021-05-19 05:29:58,589 INFO    SenderThread:72802 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=9-step=1499.ckpt reprodl-test/h44czdvb/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 05:29:58,590 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 6
+2021-05-19 05:29:58,590 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:58,591 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:58,591 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 6
+2021-05-19 05:29:58,591 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:58,591 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 6
+2021-05-19 05:29:58,591 INFO    SenderThread:72802 [file_pusher.py:finish():176] shutting down file pusher
+2021-05-19 05:29:58,592 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 7
+2021-05-19 05:29:58,592 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:58,592 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 7
+2021-05-19 05:29:58,592 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:58,592 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 7
+2021-05-19 05:29:58,692 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,128 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 8
+2021-05-19 05:29:59,128 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,128 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:59,129 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 8
+2021-05-19 05:29:59,129 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:59,129 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 8
+2021-05-19 05:29:59,129 INFO    SenderThread:72802 [sender.py:send_request_defer():336] send defer: 9
+2021-05-19 05:29:59,129 DEBUG   SenderThread:72802 [sender.py:send():176] send: final
+2021-05-19 05:29:59,130 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 05:29:59,130 DEBUG   SenderThread:72802 [sender.py:send():176] send: footer
+2021-05-19 05:29:59,130 INFO    HandlerThread:72802 [handler.py:handle_request_defer():138] handle defer: 9
+2021-05-19 05:29:59,130 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: defer
+2021-05-19 05:29:59,130 INFO    SenderThread:72802 [sender.py:send_request_defer():298] handle sender defer: 9
+2021-05-19 05:29:59,178 INFO    Thread-15 :72802 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/wandb-summary.json
+2021-05-19 05:29:59,180 INFO    Thread-13 :72802 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/config.yaml
+2021-05-19 05:29:59,188 INFO    Thread-12 :72802 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/requirements.txt
+2021-05-19 05:29:59,196 INFO    Thread-14 :72802 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/output.log
+2021-05-19 05:29:59,230 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,230 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,331 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,331 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,433 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,433 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,473 INFO    Thread-16 :72802 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/files/reprodl-test/h44czdvb/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 05:29:59,534 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,534 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,635 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,636 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,737 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 05:29:59,737 DEBUG   SenderThread:72802 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 05:29:59,738 INFO    SenderThread:72802 [file_pusher.py:join():181] waiting for file pusher
+2021-05-19 05:29:59,739 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: get_summary
+2021-05-19 05:29:59,740 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: sampled_history
+2021-05-19 05:29:59,741 DEBUG   HandlerThread:72802 [handler.py:handle_request():121] handle_request: shutdown
+2021-05-19 05:29:59,742 INFO    HandlerThread:72802 [handler.py:finish():632] shutting down handler
+2021-05-19 05:30:00,130 INFO    WriterThread:72802 [datastore.py:close():258] close: /home/barnabog/reprodl-test/wandb/run-20210519_052113-h44czdvb/run-h44czdvb.wandb
+2021-05-19 05:30:00,738 INFO    SenderThread:72802 [sender.py:finish():925] shutting down sender
+2021-05-19 05:30:00,738 INFO    SenderThread:72802 [file_pusher.py:finish():176] shutting down file pusher
+2021-05-19 05:30:00,738 INFO    SenderThread:72802 [file_pusher.py:join():181] waiting for file pusher
+2021-05-19 05:30:00,739 INFO    MainThread:72802 [internal.py:handle_exit():78] Internal process exited

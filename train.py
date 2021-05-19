@@ -111,14 +111,20 @@ class AudioNet(pl.LightningModule):
 @hydra.main(config_path="configs", config_name="default")
 def train(cfg: DictConfig):
 
+    config = {
+        'sample_rate': cfg.data.sample_rate,
+        'lr': cfg.model.optimizer.lr,
+        'base_filters': cfg.model.base_filters
+    }
+    wandb.init(project="reprodl", config=config)
+
+    # Get the (possibly updated) values from wandb
+    cfg.data.sample_rate = wandb.config.sample_rate
+    cfg.model.optimizer.lr = wandb.config.lr
+    cfg.model.base_filters = wandb.config.base_filters
+    
+    # Simple logging of the configuration
     logger.info(OmegaConf.to_yaml(cfg))
-
-    wandb.init(config=hparams_default)
-
-    wandb_config_omega = OmegaConf.create(wandb.config._as_dict())
-    cfg.data.sample_rate = wandb_config_omega.sample_rate
-    cfg.model.base_filters = wandb_config_omega.base_filters
-    cfg.model.optimizer.lr = wandb_config_omega.lr
 
     # We use folds 1,2,3 for training, 4 for validation, 5 for testing.
     path = Path(get_original_cwd()) / Path(cfg.data.path)

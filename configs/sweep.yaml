@@ -16,6 +16,5 @@ parameters:
 
 command:
   - ${env}
-  - python3
+  - ${interpreter}
   - ${program}
-  - ${args_no_hyphens}

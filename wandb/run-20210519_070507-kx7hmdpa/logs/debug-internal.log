@@ -1,0 +1,637 @@
+2021-05-19 07:05:08,848 INFO    MainThread:47994 [internal.py:wandb_internal():88] W&B internal server running at pid: 47994, started at: 2021-05-19 07:05:08.848483
+2021-05-19 07:05:08,854 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: check_version
+2021-05-19 07:05:08,854 INFO    WriterThread:47994 [datastore.py:open_for_write():77] open: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/run-kx7hmdpa.wandb
+2021-05-19 07:05:08,854 DEBUG   SenderThread:47994 [sender.py:send():176] send: header
+2021-05-19 07:05:08,855 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: check_version
+2021-05-19 07:05:08,935 DEBUG   SenderThread:47994 [sender.py:send():176] send: run
+2021-05-19 07:05:09,157 INFO    SenderThread:47994 [dir_watcher.py:__init__():168] watching files in: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files
+2021-05-19 07:05:09,157 INFO    SenderThread:47994 [sender.py:_start_run_threads():696] run started: kx7hmdpa with start time 1621407907
+2021-05-19 07:05:09,157 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:05:09,157 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: run_start
+2021-05-19 07:05:09,158 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:05:10,161 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:05:11,242 DEBUG   HandlerThread:47994 [meta.py:__init__():39] meta init
+2021-05-19 07:05:11,242 DEBUG   HandlerThread:47994 [meta.py:__init__():53] meta init done
+2021-05-19 07:05:11,242 DEBUG   HandlerThread:47994 [meta.py:probe():210] probe
+2021-05-19 07:05:11,255 DEBUG   HandlerThread:47994 [meta.py:_setup_git():200] setup git
+2021-05-19 07:05:11,299 DEBUG   HandlerThread:47994 [meta.py:_setup_git():207] setup git done
+2021-05-19 07:05:11,299 DEBUG   HandlerThread:47994 [meta.py:_save_pip():57] save pip
+2021-05-19 07:05:11,301 DEBUG   HandlerThread:47994 [meta.py:_save_pip():71] save pip done
+2021-05-19 07:05:11,301 DEBUG   HandlerThread:47994 [meta.py:_save_conda():78] save conda
+2021-05-19 07:05:12,184 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/conda-environment.yaml
+2021-05-19 07:05:12,185 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/requirements.txt
+2021-05-19 07:05:14,185 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/output.log
+2021-05-19 07:05:14,753 DEBUG   HandlerThread:47994 [meta.py:_save_conda():86] save conda done
+2021-05-19 07:05:14,753 DEBUG   HandlerThread:47994 [meta.py:probe():252] probe done
+2021-05-19 07:05:14,757 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:05:14,757 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:05:14,943 DEBUG   SenderThread:47994 [sender.py:send():176] send: files
+2021-05-19 07:05:14,943 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-metadata.json with policy now
+2021-05-19 07:05:15,186 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-metadata.json
+2021-05-19 07:05:15,491 INFO    Thread-11 :47994 [upload_job.py:push():133] Uploaded file /tmp/tmp7yo4468iwandb/230ag3ub-wandb-metadata.json
+2021-05-19 07:05:19,467 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:19,467 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:19,467 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:05:19,469 DEBUG   SenderThread:47994 [sender.py:send():176] send: config
+2021-05-19 07:05:20,196 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test
+2021-05-19 07:05:20,196 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa
+2021-05-19 07:05:20,196 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:05:21,196 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:05:29,945 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:05:29,945 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:05:37,993 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:37,993 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:37,993 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:05:37,995 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:37,995 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:37,996 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:05:37,996 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:05:37,996 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:05:38,208 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:05:39,208 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:05:40,351 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:05:45,132 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:05:45,132 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:05:58,612 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:58,614 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:05:58,614 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:05:58,614 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:05:58,614 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:05:58,615 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:05:59,221 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:06:00,222 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:06:00,314 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:06:00,315 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:06:11,335 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:06:15,507 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:06:15,507 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:06:16,727 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:16,727 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:16,727 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:06:16,727 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:06:16,727 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:06:16,728 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:06:17,231 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:06:18,232 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:06:30,703 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:06:30,703 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:06:32,803 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:32,803 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:32,803 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:06:32,805 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:32,805 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:06:32,805 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:06:32,805 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:06:33,249 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:06:33,249 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=0-step=149.ckpt
+2021-05-19 07:06:33,250 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:06:34,250 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:06:42,246 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:06:45,887 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:06:45,888 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:06:48,842 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:48,843 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:06:48,844 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:06:48,844 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:06:48,844 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:06:48,845 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:06:49,257 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:06:50,258 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:07:01,072 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:07:01,072 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:07:02,779 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:02,779 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:02,779 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:07:02,781 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:07:02,781 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:07:02,782 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:07:03,265 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:07:04,265 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:07:13,170 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:07:16,256 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:07:16,256 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:07:17,404 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:17,405 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:17,405 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:07:17,405 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:07:17,405 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:07:17,406 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:07:18,273 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:07:19,274 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:07:31,437 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:07:31,437 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:07:35,077 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:35,077 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:35,077 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:07:35,079 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:07:35,080 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:07:35,080 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:07:35,286 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:07:35,287 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=1-step=299.ckpt
+2021-05-19 07:07:35,287 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:07:37,290 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:07:44,197 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:07:46,623 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:07:46,623 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:07:54,333 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:54,335 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:07:54,337 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:07:54,337 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:07:54,337 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:07:54,338 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:07:55,303 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:07:55,304 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:08:01,813 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:08:01,813 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:08:11,680 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:11,680 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:11,681 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:08:11,681 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:08:11,681 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:08:11,681 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:08:12,325 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:08:13,325 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:08:15,240 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:08:17,007 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:08:17,007 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:08:28,355 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:28,355 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:28,356 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:08:28,356 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:08:28,357 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:08:28,357 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:08:29,337 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:08:30,338 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:08:32,197 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:08:32,197 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:08:45,431 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:45,431 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:08:45,431 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:08:45,431 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:08:45,432 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:08:45,432 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:08:46,252 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:08:46,350 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:08:46,351 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=2-step=449.ckpt
+2021-05-19 07:08:46,351 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:08:47,351 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:08:47,383 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:08:47,384 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:09:00,233 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:00,234 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:00,234 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:09:00,235 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:09:00,236 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:09:00,236 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:09:00,358 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:09:01,359 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:09:02,572 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:09:02,572 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:09:13,589 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:13,589 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:13,589 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:09:13,590 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:09:13,590 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:09:13,590 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:09:14,374 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:09:15,375 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:09:17,297 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:09:17,769 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:09:17,769 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:09:26,121 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:26,121 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:26,123 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:09:26,123 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:09:26,123 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:09:26,126 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:09:26,381 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:09:27,381 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:09:32,952 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:09:32,952 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:09:39,200 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:39,201 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:39,203 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:09:39,203 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:09:39,203 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:09:39,203 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:09:39,388 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:09:39,388 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=3-step=599.ckpt
+2021-05-19 07:09:39,389 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:09:41,389 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:09:48,135 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:09:48,135 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:09:48,314 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:09:54,038 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:54,252 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:09:54,252 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:09:54,252 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:09:54,252 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:09:54,253 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:09:54,400 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:09:54,400 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:10:03,316 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:10:03,316 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:10:11,876 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:11,876 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:11,876 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:10:11,877 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:10:11,877 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:10:11,877 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:10:12,421 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:10:13,424 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:10:18,513 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:10:18,513 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:10:19,396 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:10:29,000 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:29,000 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:29,000 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:10:29,000 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:10:29,000 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:10:29,001 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:10:29,441 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:10:30,442 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:10:33,708 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:10:33,708 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:10:48,227 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:48,228 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:10:48,229 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:10:48,229 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:10:48,229 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:10:48,230 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:10:48,454 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:10:48,454 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=4-step=749.ckpt
+2021-05-19 07:10:48,454 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:10:48,893 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:10:48,894 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:10:49,455 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:10:50,517 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:11:03,816 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:03,817 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:03,817 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:11:03,817 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:11:03,817 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:11:03,817 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:11:04,081 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:11:04,082 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:11:04,466 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:11:05,468 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:11:18,410 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:18,411 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:18,411 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:11:18,411 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:11:18,411 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:11:18,411 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:11:18,475 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:11:19,273 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:11:19,273 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:11:19,476 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:11:21,647 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:11:33,232 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:33,232 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:33,232 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:11:33,234 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:11:33,234 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:11:33,235 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:11:33,490 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:11:34,457 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:11:34,457 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:11:34,490 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:11:49,645 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:11:49,645 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:11:52,714 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:11:56,689 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:56,690 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:11:56,690 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:11:56,690 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:11:56,691 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:11:56,691 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:11:57,504 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:11:57,504 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:11:57,504 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=5-step=899.ckpt
+2021-05-19 07:11:57,504 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:12:04,830 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:12:04,830 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:12:20,011 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:12:20,011 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:12:20,626 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:12:20,628 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:12:20,628 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:12:20,628 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:12:20,628 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:12:20,629 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:12:21,521 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:12:22,522 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:12:23,756 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:12:35,201 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:12:35,202 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:12:42,550 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:12:42,551 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:12:42,552 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:12:42,552 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:12:42,552 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:12:42,553 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:12:43,533 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:12:43,533 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:12:50,391 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:12:50,393 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:12:54,919 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:13:05,578 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:13:05,578 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:13:09,626 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:13:09,627 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:13:09,627 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:13:09,627 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:13:09,627 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:13:09,628 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:13:10,554 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:13:11,556 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:13:20,766 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:13:20,766 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:13:26,190 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:13:35,957 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:13:35,957 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:13:50,489 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:13:50,489 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:13:50,489 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:13:50,491 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:13:50,492 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:13:50,492 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:13:50,583 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:13:50,583 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=6-step=1049.ckpt
+2021-05-19 07:13:50,584 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:13:51,158 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:13:51,159 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:13:52,586 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:13:57,474 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:14:06,373 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:14:06,374 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:14:21,559 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:14:21,560 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:14:28,684 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:14:29,850 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:14:29,850 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:14:29,850 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:14:29,852 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:14:29,853 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:14:29,853 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:14:30,612 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:14:31,612 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:14:36,919 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:14:36,919 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:14:52,106 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:14:52,106 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:14:57,913 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:14:57,913 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:14:57,913 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:14:57,913 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:14:57,913 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:14:57,913 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:14:58,638 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:14:59,638 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:14:59,835 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:15:07,294 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:15:07,294 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:15:20,917 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:15:20,917 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:15:20,917 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:15:20,917 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:15:20,918 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:15:20,918 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:15:21,654 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:15:22,494 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:15:22,494 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:15:22,654 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:15:31,001 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:15:37,684 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:15:37,685 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:15:43,448 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:15:43,450 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:15:43,450 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:15:43,450 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:15:43,450 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:15:43,451 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:15:43,667 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:15:43,667 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=7-step=1199.ckpt
+2021-05-19 07:15:43,667 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:15:44,667 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:15:52,876 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:15:52,876 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:16:02,116 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:16:08,064 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:16:08,065 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:16:13,884 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:16:13,884 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:16:13,886 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:16:13,886 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:16:13,886 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:16:13,889 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:16:14,695 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:16:15,696 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:16:23,251 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:16:23,251 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:16:33,361 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:16:38,442 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:16:38,442 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:16:51,616 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:16:51,618 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:16:51,619 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:16:51,619 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:16:51,619 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:16:51,619 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:16:51,718 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:16:52,719 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:16:53,626 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:16:53,627 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:17:04,710 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:17:08,827 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:17:08,827 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:17:24,014 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:17:24,014 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:17:27,699 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:17:27,700 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:17:27,701 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:17:27,702 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:17:27,702 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:17:27,702 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:17:27,743 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:17:29,747 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:17:36,038 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:17:39,201 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:17:39,202 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:17:54,393 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:17:54,393 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:18:07,349 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:18:07,824 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:18:07,827 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:18:07,829 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:18:07,829 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:18:07,829 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:18:07,830 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:18:08,778 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:18:08,778 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:18:08,779 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=8-step=1349.ckpt
+2021-05-19 07:18:08,779 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:18:09,578 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:18:09,578 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:18:24,772 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:18:24,773 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:18:38,669 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:18:39,958 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:18:39,959 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:18:46,814 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:18:46,814 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:18:46,814 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:18:46,814 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:18:46,815 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:18:46,815 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:18:47,804 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:18:48,804 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:18:55,142 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:18:55,143 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:19:09,933 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:19:10,327 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:19:10,328 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:19:18,380 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:19:18,380 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:19:18,380 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:19:18,380 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:19:18,381 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:19:18,381 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:19:18,827 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:19:19,828 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:19:25,518 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:19:25,518 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:19:40,701 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:19:40,702 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:19:41,044 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:19:44,858 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:19:44,858 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:19:44,858 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:19:44,858 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:19:44,859 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:19:44,859 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:19:45,843 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:19:46,844 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:19:55,887 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:19:55,887 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:20:11,067 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: stop_status
+2021-05-19 07:20:11,067 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: stop_status
+2021-05-19 07:20:12,071 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:20:16,950 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:20:16,950 DEBUG   SenderThread:47994 [sender.py:send():176] send: metric
+2021-05-19 07:20:16,951 WARNING SenderThread:47994 [sender.py:send_metric():779] Seen metric with glob (shouldnt happen)
+2021-05-19 07:20:16,951 DEBUG   SenderThread:47994 [sender.py:send():176] send: history
+2021-05-19 07:20:16,951 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:20:16,952 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:20:17,866 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:20:17,866 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_created():216] file/dir created: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 07:20:17,866 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints
+2021-05-19 07:20:18,866 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:20:18,972 DEBUG   SenderThread:47994 [sender.py:send():176] send: telemetry
+2021-05-19 07:20:18,972 DEBUG   SenderThread:47994 [sender.py:send():176] send: exit
+2021-05-19 07:20:18,972 INFO    SenderThread:47994 [sender.py:send_exit():281] handling exit code: 0
+2021-05-19 07:20:18,973 INFO    SenderThread:47994 [sender.py:send_exit():289] send defer
+2021-05-19 07:20:18,974 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:18,974 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:18,975 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 0
+2021-05-19 07:20:18,974 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:18,975 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:18,975 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 0
+2021-05-19 07:20:18,976 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 1
+2021-05-19 07:20:18,976 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:18,976 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 1
+2021-05-19 07:20:19,072 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,073 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 1
+2021-05-19 07:20:19,073 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 2
+2021-05-19 07:20:19,073 DEBUG   SenderThread:47994 [sender.py:send():176] send: stats
+2021-05-19 07:20:19,074 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,074 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 2
+2021-05-19 07:20:19,075 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,075 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 2
+2021-05-19 07:20:19,075 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 3
+2021-05-19 07:20:19,075 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,075 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 3
+2021-05-19 07:20:19,075 DEBUG   SenderThread:47994 [sender.py:send():176] send: summary
+2021-05-19 07:20:19,076 INFO    SenderThread:47994 [sender.py:_save_file():821] saving file wandb-summary.json with policy end
+2021-05-19 07:20:19,076 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,076 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 3
+2021-05-19 07:20:19,076 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 4
+2021-05-19 07:20:19,076 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,077 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 4
+2021-05-19 07:20:19,077 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,077 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 4
+2021-05-19 07:20:19,084 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:19,290 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 5
+2021-05-19 07:20:19,290 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:19,291 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,291 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 5
+2021-05-19 07:20:19,291 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,291 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 5
+2021-05-19 07:20:19,291 INFO    SenderThread:47994 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-05-19 07:20:19,392 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:19,867 INFO    Thread-8  :47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:20:19,868 INFO    SenderThread:47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:20:19,868 INFO    SenderThread:47994 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/output.log
+2021-05-19 07:20:19,868 INFO    SenderThread:47994 [dir_watcher.py:finish():312] scan: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files
+2021-05-19 07:20:19,869 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/requirements.txt requirements.txt
+2021-05-19 07:20:19,869 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml config.yaml
+2021-05-19 07:20:19,875 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-metadata.json wandb-metadata.json
+2021-05-19 07:20:19,875 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/conda-environment.yaml conda-environment.yaml
+2021-05-19 07:20:19,888 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/output.log output.log
+2021-05-19 07:20:19,888 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json wandb-summary.json
+2021-05-19 07:20:19,888 INFO    SenderThread:47994 [dir_watcher.py:finish():318] scan save: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=9-step=1499.ckpt reprodl-test/kx7hmdpa/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 07:20:19,889 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 6
+2021-05-19 07:20:19,889 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:19,892 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,903 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 6
+2021-05-19 07:20:19,903 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,906 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 6
+2021-05-19 07:20:19,925 INFO    SenderThread:47994 [file_pusher.py:finish():176] shutting down file pusher
+2021-05-19 07:20:19,926 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 7
+2021-05-19 07:20:19,927 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:19,927 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 7
+2021-05-19 07:20:19,927 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:19,928 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 7
+2021-05-19 07:20:19,996 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,250 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 8
+2021-05-19 07:20:20,251 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,251 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:20,251 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 8
+2021-05-19 07:20:20,252 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:20,252 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 8
+2021-05-19 07:20:20,252 INFO    SenderThread:47994 [sender.py:send_request_defer():336] send defer: 9
+2021-05-19 07:20:20,252 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: defer
+2021-05-19 07:20:20,252 DEBUG   SenderThread:47994 [sender.py:send():176] send: final
+2021-05-19 07:20:20,253 INFO    HandlerThread:47994 [handler.py:handle_request_defer():138] handle defer: 9
+2021-05-19 07:20:20,253 DEBUG   SenderThread:47994 [sender.py:send():176] send: footer
+2021-05-19 07:20:20,253 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: defer
+2021-05-19 07:20:20,253 INFO    SenderThread:47994 [sender.py:send_request_defer():298] handle sender defer: 9
+2021-05-19 07:20:20,353 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,353 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,456 INFO    Thread-13 :47994 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/config.yaml
+2021-05-19 07:20:20,457 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,457 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,468 INFO    Thread-14 :47994 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/output.log
+2021-05-19 07:20:20,477 INFO    Thread-12 :47994 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/requirements.txt
+2021-05-19 07:20:20,499 INFO    Thread-15 :47994 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/wandb-summary.json
+2021-05-19 07:20:20,559 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,559 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,660 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,660 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,742 INFO    Thread-16 :47994 [upload_job.py:push():133] Uploaded file /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/files/reprodl-test/kx7hmdpa/checkpoints/epoch=9-step=1499.ckpt
+2021-05-19 07:20:20,763 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,763 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,864 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,865 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,966 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: poll_exit
+2021-05-19 07:20:20,966 DEBUG   SenderThread:47994 [sender.py:send_request():186] send_request: poll_exit
+2021-05-19 07:20:20,966 INFO    SenderThread:47994 [file_pusher.py:join():181] waiting for file pusher
+2021-05-19 07:20:20,967 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: get_summary
+2021-05-19 07:20:20,969 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: sampled_history
+2021-05-19 07:20:20,970 DEBUG   HandlerThread:47994 [handler.py:handle_request():121] handle_request: shutdown
+2021-05-19 07:20:20,971 INFO    HandlerThread:47994 [handler.py:finish():632] shutting down handler
+2021-05-19 07:20:21,255 INFO    WriterThread:47994 [datastore.py:close():258] close: /home/barnabog/reprodl-test/wandb/run-20210519_070507-kx7hmdpa/run-kx7hmdpa.wandb
+2021-05-19 07:20:21,967 INFO    SenderThread:47994 [sender.py:finish():925] shutting down sender
+2021-05-19 07:20:21,967 INFO    SenderThread:47994 [file_pusher.py:finish():176] shutting down file pusher
+2021-05-19 07:20:21,967 INFO    SenderThread:47994 [file_pusher.py:join():181] waiting for file pusher
+2021-05-19 07:20:21,969 INFO    MainThread:47994 [internal.py:handle_exit():78] Internal process exited
